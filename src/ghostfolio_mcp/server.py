@@ -88,7 +88,7 @@ def main():
     logger.info(
         f"Starting Ghostfolio MCP Server for {GHOSTFOLIO_CONFIG.ghostfolio_url} ..."
     )
-    mcp.run()
+    mcp.run(transport="http", port=8000)
 
 
 if __name__ == "__main__":
